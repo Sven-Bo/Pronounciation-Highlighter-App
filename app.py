@@ -5,19 +5,20 @@ from phonetic_highlighter.phonetic_highlighter import highlight_phonetics
 def main():
     icon = "assets/logo.png"
     st.set_page_config(
-        page_title="Phonetic Highlighter",
+        page_title="Pronunciation Buddy",
         page_icon=icon,
         layout="centered",
         initial_sidebar_state="collapsed",
     )
-    st.logo(icon)
-    hide = """
-        <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-        </style>
-    """
-    st.markdown(hide, unsafe_allow_html=True)
+    # ---- HIDE STREAMLIT STYLE ----
+    hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
+    st.markdown(hide_st_style, unsafe_allow_html=True)
     st.title("Phonetic Highlighter")
     st.markdown(
         "Enter text and select a phonetic symbol to highlight the corresponding sounds. Watch the magic happen!"
