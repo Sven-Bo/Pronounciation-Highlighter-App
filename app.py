@@ -19,7 +19,7 @@ def main():
                 </style>
                 """
     st.markdown(hide_st_style, unsafe_allow_html=True)
-    st.title("Phonetic Highlighter")
+    st.title("Pronunciation Buddy")
     st.markdown(
         "Enter text and select a phonetic symbol to highlight the corresponding sounds. Watch the magic happen!"
     )
